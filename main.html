@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suresh Kumar - Accessible Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Main heading of the portfolio with ARIA role -->
+    <header>
+        <h1 role="heading">Suresh Kumar - Full Stack Web Developer</h1>
+    </header>
+
+    <!-- Navigation bar with ARIA role -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section with image and description -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Suresh Kumar Profile Picture" role="img">
+        <p>
+            Hello! I’m Suresh Kumar, a passionate Full Stack Web Developer with a love for creating dynamic and accessible web applications. Currently pursuing my MCA, I specialize in building user-friendly interfaces and efficient backend systems.
+        </p>
+    </section>
+
+    <!-- List of skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul role="list">
+            <li role="listitem">JavaScript (React, Node.js)</li>
+            <li role="listitem">HTML & CSS</li>
+            <li role="listitem">Java & C++</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Suresh Kumar. All rights reserved.</p>
+    </footer>
 
 </body>
-
 </html>
